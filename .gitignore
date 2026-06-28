@@ -5,12 +5,7 @@ local.properties
 /build
 **/build/
 # IDE
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea
 # macOS
 .DS_Store
 # Native
