@@ -9,8 +9,9 @@ import org.gradle.kotlin.dsl.getByType
 
 class AppLibraryPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
+        // AGP 9.x bundles Kotlin support natively — do NOT apply kotlin.android separately,
+        // it would re-register the 'kotlin' extension and cause a conflict.
         pluginManager.apply("com.android.library")
-        pluginManager.apply("org.jetbrains.kotlin.android")
 
         val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
