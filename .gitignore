@@ -1,15 +1,19 @@
 *.iml
 .gradle
-/local.properties
+local.properties
+# Build outputs — root and all submodules
+/build
+**/build/
+# IDE
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+# macOS
 .DS_Store
-/build
+# Native
 /captures
 .externalNativeBuild
 .cxx
-local.properties
